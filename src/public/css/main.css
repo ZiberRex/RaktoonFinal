@@ -1,0 +1,10 @@
+.bg-black {
+  background-color: #288acc !important ;
+}
+
+div.card{
+  border-radius: 2rem;
+  background-color: rgb(170, 33, 33);
+  color: white;
+}
+

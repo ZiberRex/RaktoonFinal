@@ -1,0 +1,45 @@
+<div class="card card-body p-4 text-white">
+  <h3>Añade un proyecto con su tarea</h3>
+  <form action="/tasks/add" method="post">
+
+    {{! Proyect Input }}
+    <div class="mb-3">
+      <label for="proyecto">Escribe el titulo del proyecto:</label>
+      <input
+        id="proyecto"
+        class="form-control"
+        type="text"
+        name="proyecto"
+        placeholder="Proyecto"
+        autofocus
+      />
+    </div>
+
+
+    {{! Title Input }}
+    <div class="mb-3">
+      <label for="title">Escribe un titulo para tu tarea:</label>
+      <input
+        id="title"
+        class="form-control"
+        type="text"
+        name="title"
+        placeholder="Tarea"
+        autofocus
+      />
+    </div>
+
+    {{! Description Input }}
+    <div class="mb-3">
+      <label for="description">Descripcion:</label>
+      <textarea
+        class="form-control"
+        name="description"
+        cols="90"
+        placeholder="Añade una descripcion"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Add</button>
+  </form>
+</div>
